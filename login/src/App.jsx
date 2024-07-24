@@ -1,12 +1,12 @@
 import emailicon from '../src/Assets/email.png'
 import passwordicon from '../src/Assets/password.png'
 import './App.css';
-import Navbar from './Navbar.jsx'
+
 
 function App() {
   return (
     <>
-    <Navbar/>
+   
     <div className='main'>
     <div className='header'>
       <div className='text'>Login</div>
