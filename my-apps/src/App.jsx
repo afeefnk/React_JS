@@ -1,7 +1,23 @@
 
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  const[count, setCount]=useState(0);
+  
+  let increment=()=>{
+    setCount(count+1);
+    console.log(count);
+  }
+
+  let decrement=()=>{
+    if(count!==0){
+      setCount(count-1);
+  }
+  console.log(count);
+  
+}
+
   return (
     <>
     <nav className="navbar">
@@ -16,6 +32,11 @@ function App() {
         <a href="$" className="btn">Contact</a>
       </div>
     </nav>
+     <div className='main'>
+    <button onClick={increment} className='btn1'>Increment</button>
+    <button onClick={decrement} className='btn1'>Decrement</button>
+    <h1>{count}</h1>
+    </div>
     </>
   );
 }
