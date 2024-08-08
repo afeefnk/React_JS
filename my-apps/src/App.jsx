@@ -1,40 +1,43 @@
-import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef, useState } from "react";
 import "./App.css";
+import FoodKeys from "./Components/FoodKeys";
+// import Keys from "./Components/Keys.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [preCount, setPreCount] = useState(0);
+  // const [count, setCount] = useState(0);
+  // const [preCount, setPreCount] = useState(0);
 
-  const inputRef = useRef(null);
-  function handleClick() {
-    inputRef.current.style.padding = "10px";
-    inputRef.current.style.backgroundColor = "yellow";
-    inputRef.current.style.border = "none";
-    inputRef.current.focus();
-  }
-  useEffect(() => {
-    if (count > preCount) {
-      console.log("Value is Incremented");
-    } else if (count < preCount) {
-      console.log("Value is Decremented");
-    }
-    setPreCount(count);
-  }, [count, preCount]);
+  // const inputRef = useRef(null);
+  // function handleClick() {
+  //   inputRef.current.style.padding = "10px";
+  //   inputRef.current.style.backgroundColor = "yellow";
+  //   inputRef.current.style.border = "none";
+  //   inputRef.current.focus();
+  //   console.log(inputRef.current.value);
+  // }
+  // useEffect(() => {
+  //   if (count > preCount) {
+  //     console.log("Value is Incremented");
+  //   } else if (count < preCount) {
+  //     console.log("Value is Decremented");
+  //   }
+  //   setPreCount(count);
+  // }, [count, preCount]);
 
-  let increment = () => {
-    setCount(count + 1);
-  };
+  // let increment = () => {
+  //   setCount(count + 1);
+  // };
 
-  let decrement = () => {
-    if (count !== 0) {
-      setCount(count - 1);
-    }
-    // console.log(count);
-  };
+  // let decrement = () => {
+  //   if (count !== 0) {
+  //     setCount(count - 1);
+  //   }
+  //   // console.log(count);
+  // };
 
   return (
     <>
-      <nav className="navbar">
+     {/* <nav className="navbar">
         <div className="head1">
           <h1>Softroniics</h1>
         </div>
@@ -55,19 +58,21 @@ function App() {
             Contact
           </a>
         </div>
-      </nav>
+      </nav> */}
       <div className="main">
-        <button onClick={increment} className="btn1">
+        {/* <button onClick={increment} className="btn1">
           Increment
         </button>
         <button onClick={decrement} className="btn1">
           Decrement
         </button>
         <h1>{count}</h1>
-        <input type="text" ref={inputRef} />
+        <input type="text" ref={inputRef}/>
         <button onClick={handleClick} className="btn1">
           Click
-        </button>
+        </button> */}
+        {/* <Keys/> */}
+        <FoodKeys/>
       </div>
     </>
   );
