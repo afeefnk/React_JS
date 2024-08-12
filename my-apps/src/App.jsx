@@ -1,7 +1,8 @@
 // import { useEffect, useRef, useState } from "react";
-import "./App.css";
-import FoodKeys from "./Components/FoodKeys";
+// import "./App.css";
+// import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
+import Form from "./Components/Form";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -72,7 +73,8 @@ function App() {
           Click
         </button> */}
         {/* <Keys/> */}
-        <FoodKeys/>
+        {/* <FoodKeys/> */}
+        <Form/>
       </div>
     </>
   );
