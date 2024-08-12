@@ -2,7 +2,8 @@
 // import "./App.css";
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
-import Form from "./Components/Form";
+// import Form from "./Components/Form";
+import MyForm from "./Components/MyForm";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -74,7 +75,8 @@ function App() {
         </button> */}
         {/* <Keys/> */}
         {/* <FoodKeys/> */}
-        <Form/>
+        {/* <Form/> */}
+        <MyForm/>
       </div>
     </>
   );
