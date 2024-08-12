@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+form {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="textarea"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #5c67f2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="button"] {
+    background-color: #777;
+    margin-right: 10px;
+}
+button:hover {
+    background-color: #4a53d3;
+}
+button[type="button"]:hover {
+    background-color: #666;
+}
+.gender-group,
+.radio-group {
+    margin-bottom: 20px;
+}
+.radio-group label {
+    margin-right: 20px;
+}
