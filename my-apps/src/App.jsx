@@ -6,7 +6,10 @@
 // import MyForm from "./Components/MyForm";
 // import Prop from "./Components/Prop";
 // import PropData from "./Components/PropData";
-import ChildA from "./Components/useContext/ChildA";
+// import ChildA from "./Components/useContext/ChildA";
+
+import ProductData from "./Components/ProductData";
+
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -81,7 +84,8 @@ function App() {
         {/* <Form/> */}
         {/* <MyForm/> */}
         {/* <PropData/> */}
-        <ChildA name={'Hello World'}/>
+        {/* <ChildA name={'Hello World'}/> */}
+        <ProductData/>
       </div>
     </>
   );
