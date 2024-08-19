@@ -2,8 +2,11 @@
 // import "./App.css";
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
-// import Form from "./Components/Form";
-import MyForm from "./Components/MyForm";
+// import Form from "./Components/Form";~
+// import MyForm from "./Components/MyForm";
+// import Prop from "./Components/Prop";
+// import PropData from "./Components/PropData";
+import ChildA from "./Components/useContext/ChildA";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -76,7 +79,9 @@ function App() {
         {/* <Keys/> */}
         {/* <FoodKeys/> */}
         {/* <Form/> */}
-        <MyForm/>
+        {/* <MyForm/> */}
+        {/* <PropData/> */}
+        <ChildA name={'Hello World'}/>
       </div>
     </>
   );
