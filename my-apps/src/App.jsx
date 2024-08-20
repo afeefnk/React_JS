@@ -7,8 +7,11 @@
 // import Prop from "./Components/Prop";
 // import PropData from "./Components/PropData";
 // import ChildA from "./Components/useContext/ChildA";
+// import ProductData from "./Components/ProductData";
 
-import ProductData from "./Components/ProductData";
+import Header from "./Components/useContext/Header";
+import Layout from "./Components/useContext/Layout";
+import MainContext from "./Components/useContext/MainContext";
 
 
 function App() {
@@ -85,7 +88,11 @@ function App() {
         {/* <MyForm/> */}
         {/* <PropData/> */}
         {/* <ChildA name={'Hello World'}/> */}
-        <ProductData/>
+        {/* <ProductData/> */}
+        <MainContext>
+          <Header/>
+          <Layout/>
+          </MainContext>
       </div>
     </>
   );
