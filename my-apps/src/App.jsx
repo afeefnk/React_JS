@@ -1,5 +1,5 @@
 // import { useEffect, useRef, useState } from "react";
-// import "./App.css";
+import "./App.css";
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
 // import Form from "./Components/Form";~
@@ -9,9 +9,13 @@
 // import ChildA from "./Components/useContext/ChildA";
 // import ProductData from "./Components/ProductData";
 
-import Header from "./Components/useContext/Header";
-import Layout from "./Components/useContext/Layout";
-import MainContext from "./Components/useContext/MainContext";
+import CartProvider from "./Components/E-Commerce/CartProvider";
+import Navbar from "./Components/E-Commerce/Navbar";
+import ProductList from "./Components/E-Commerce/ProductList";
+
+// import Header from "./Components/useContext/Header";
+// import Layout from "./Components/useContext/Layout";
+// import MainContext from "./Components/useContext/MainContext";
 
 
 function App() {
@@ -89,10 +93,20 @@ function App() {
         {/* <PropData/> */}
         {/* <ChildA name={'Hello World'}/> */}
         {/* <ProductData/> */}
-        <MainContext>
+
+        {/* <MainContext>
           <Header/>
           <Layout/>
-          </MainContext>
+          </MainContext> */}
+
+<CartProvider>
+      <div>
+        <Navbar/>
+        <div className="container">
+          <ProductList />
+        </div>
+      </div>
+    </CartProvider>
       </div>
     </>
   );
