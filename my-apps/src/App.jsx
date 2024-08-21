@@ -1,12 +1,9 @@
 // import { useEffect, useRef, useState } from "react";
 // import "./App.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavbarRouting from "./Components/Routing/NavbarRouting";
-import Home from './Components/Routing/Home';
-import About from './Components/Routing/About';
-import Contact from './Components/Routing/Contact';
-import Service from './Components/Routing/Service';
-import Login from "./Components/Routing/Login";
+
+
+
+
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
 // import Form from "./Components/Form";~
@@ -16,14 +13,29 @@ import Login from "./Components/Routing/Login";
 // import ChildA from "./Components/useContext/ChildA";
 // import ProductData from "./Components/ProductData";
 
-// import CartProvider from "./Components/E-Commerce/CartProvider";
-// import Navbar from "./Components/E-Commerce/Navbar";
-// import ProductList from "./Components/E-Commerce/ProductList";
 
 // import Header from "./Components/useContext/Header";
 // import Layout from "./Components/useContext/Layout";
 // import MainContext from "./Components/useContext/MainContext";
 
+
+
+
+
+import CartProvider from "./Components/E-Commerce/CartProvider";
+import Navbar from "./Components/E-Commerce/Navbar";
+import ProductList from "./Components/E-Commerce/ProductList";
+
+
+
+
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import NavbarRouting from "./Components/Routing/NavbarRouting";
+// import Home from './Components/Routing/Home';
+// import About from './Components/Routing/About';
+// import Contact from './Components/Routing/Contact';
+// import Service from './Components/Routing/Service';
+// import Login from "./Components/Routing/Login";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -131,21 +143,21 @@ function App() {
 
 
 
-{/* <CartProvider>
+<CartProvider>
       <div>
         <Navbar/>
         <div className="container">
           <ProductList />
         </div>
       </div>
-    </CartProvider> */}
+    </CartProvider>
 
 
 
 
 
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
     <NavbarRouting/>
     <Routes>
       <Route path="/" element = {<Home/>}></Route>
@@ -154,7 +166,7 @@ function App() {
       <Route path="/contact" element = {<Contact/>}></Route>
       <Route path="/service" element = {<Service/>}></Route>
     </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
       </div>
     </>
   );

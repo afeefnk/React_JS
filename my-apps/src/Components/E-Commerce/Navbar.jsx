@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "./CartContext";
 import Cart from "./Cart";
-import "../../App.css";
+import "./ECommerce.css"
 
 const Navbar = () => {
   const { cart } = useCart();

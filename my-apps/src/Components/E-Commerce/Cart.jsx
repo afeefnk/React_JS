@@ -1,6 +1,6 @@
 import React from 'react'
 import { useCart } from './CartContext'
-import '../../App.css'
+import './ECommerce.css'
 
 const Cart = ({ onClose }) => {
   const { cart, removeItem, totalAmount } = useCart();
