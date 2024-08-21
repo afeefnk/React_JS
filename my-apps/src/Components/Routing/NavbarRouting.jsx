@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const NavbarRouting = () => {
   return (
@@ -14,6 +14,7 @@ const NavbarRouting = () => {
         <h1><Link to = '/contact'>Contact</Link></h1>
     </div>
 </nav>
+<Outlet/>
    </>
   )
 }

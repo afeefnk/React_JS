@@ -6,6 +6,7 @@ import Home from './Components/Routing/Home';
 import About from './Components/Routing/About';
 import Contact from './Components/Routing/Contact';
 import Service from './Components/Routing/Service';
+import Login from "./Components/Routing/Login";
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
 // import Form from "./Components/Form";~
@@ -148,6 +149,7 @@ function App() {
     <NavbarRouting/>
     <Routes>
       <Route path="/" element = {<Home/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
       <Route path="/about" element = {<About/>}></Route>
       <Route path="/contact" element = {<Contact/>}></Route>
       <Route path="/service" element = {<Service/>}></Route>
