@@ -1,5 +1,11 @@
 // import { useEffect, useRef, useState } from "react";
-import "./App.css";
+// import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavbarRouting from "./Components/Routing/NavbarRouting";
+import Home from './Components/Routing/Home';
+import About from './Components/Routing/About';
+import Contact from './Components/Routing/Contact';
+import Service from './Components/Routing/Service';
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
 // import Form from "./Components/Form";~
@@ -9,9 +15,9 @@ import "./App.css";
 // import ChildA from "./Components/useContext/ChildA";
 // import ProductData from "./Components/ProductData";
 
-import CartProvider from "./Components/E-Commerce/CartProvider";
-import Navbar from "./Components/E-Commerce/Navbar";
-import ProductList from "./Components/E-Commerce/ProductList";
+// import CartProvider from "./Components/E-Commerce/CartProvider";
+// import Navbar from "./Components/E-Commerce/Navbar";
+// import ProductList from "./Components/E-Commerce/ProductList";
 
 // import Header from "./Components/useContext/Header";
 // import Layout from "./Components/useContext/Layout";
@@ -88,25 +94,65 @@ function App() {
         </button> */}
         {/* <Keys/> */}
         {/* <FoodKeys/> */}
+
+
+
         {/* <Form/> */}
+
+
+
         {/* <MyForm/> */}
+
+
+
         {/* <PropData/> */}
+
+
+
         {/* <ChildA name={'Hello World'}/> */}
+
+
+
         {/* <ProductData/> */}
+
+
+
+
+
 
         {/* <MainContext>
           <Header/>
           <Layout/>
           </MainContext> */}
 
-<CartProvider>
+
+
+
+
+
+{/* <CartProvider>
       <div>
         <Navbar/>
         <div className="container">
           <ProductList />
         </div>
       </div>
-    </CartProvider>
+    </CartProvider> */}
+
+
+
+
+
+
+    <BrowserRouter>
+    <NavbarRouting/>
+    <Routes>
+      <Route path="/" element = {<Home/>}></Route>
+      <Route path="/about" element = {<About/>}></Route>
+      <Route path="/contact" element = {<Contact/>}></Route>
+      <Route path="/service" element = {<Service/>}></Route>
+    </Routes>
+    </BrowserRouter>
       </div>
     </>
   );
