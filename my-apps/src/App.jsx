@@ -4,6 +4,7 @@
 
 
 
+
 // import FoodKeys from "./Components/FoodKeys";
 // import Keys from "./Components/Keys.jsx";
 // import Form from "./Components/Form";~
@@ -22,9 +23,9 @@
 
 
 
-import CartProvider from "./Components/E-Commerce/CartProvider";
-import Navbar from "./Components/E-Commerce/Navbar";
-import ProductList from "./Components/E-Commerce/ProductList";
+// import CartProvider from "./Components/E-Commerce/CartProvider";
+// import Navbar from "./Components/E-Commerce/Navbar";
+// import ProductList from "./Components/E-Commerce/ProductList";
 
 
 
@@ -37,10 +38,21 @@ import ProductList from "./Components/E-Commerce/ProductList";
 // import Service from './Components/Routing/Service';
 // import Login from "./Components/Routing/Login";
 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Components/Task Commerce Site/Home";
+import Navbar from "./Components/Task Commerce Site/Navbar";
+import Shop from "./Components/Task Commerce Site/Shop";
+import About from "./Components/Task Commerce Site/About";
+import Login from "./Components/Task Commerce Site/Login";
+
+
+
+
+
 function App() {
   // const [count, setCount] = useState(0);
   // const [preCount, setPreCount] = useState(0);
-
+  
   // const inputRef = useRef(null);
   // function handleClick() {
   //   inputRef.current.style.padding = "10px";
@@ -143,16 +155,14 @@ function App() {
 
 
 
-<CartProvider>
+{/* <CartProvider>
       <div>
         <Navbar/>
         <div className="container">
           <ProductList />
         </div>
       </div>
-    </CartProvider>
-
-
+    </CartProvider> */}
 
 
 
@@ -167,6 +177,23 @@ function App() {
       <Route path="/service" element = {<Service/>}></Route>
     </Routes>
     </BrowserRouter> */}
+
+<BrowserRouter>
+    <Navbar/>
+    <Routes>
+    <Route path="/" element = {<Home/>}></Route>
+    <Route path="/shop" element = {<Shop/>}></Route>
+    <Route path="/about" element = {<About/>}></Route>
+    <Route path="/login" element = {<Login/>}></Route>
+    
+
+
+    </Routes>
+</BrowserRouter>
+
+
+
+
       </div>
     </>
   );
