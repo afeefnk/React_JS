@@ -16,11 +16,11 @@ const Navbar = () => {
   return (
     <>
      <nav className="navbar">
-        <h1 className="logo">E-commerce App</h1>
-        <div className="cart-icon-container" onClick={toggleCart}>
+        <h1>E-commerce App</h1>
+        <button className="cart-icon" onClick={toggleCart}>
           <FontAwesomeIcon icon={faShoppingCart} />
           {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
-        </div>
+        </button>
       </nav>
 
       {isCartVisible && <Cart onClose={toggleCart} />}
