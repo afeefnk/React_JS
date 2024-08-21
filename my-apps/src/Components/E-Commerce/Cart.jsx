@@ -6,27 +6,27 @@ const Cart = ({ onClose }) => {
   const { cart, removeItem, totalAmount } = useCart();
 
   return (
-    <div className="cart-modal">
-      <div className="cart-content">
+    <div className="cart-overlay">
+      <div className="cart-content-fullscreen">
         <button className="close-cart" onClick={onClose}>X</button>
-        <h3>Your Shopping Cart</h3>
+        <h2>Your Shopping Cart</h2>
         {cart.length > 0 ? (
           <>
-            <ul className="cart-items">
+            <div className="cart-items-fullscreen">
               {cart.map((item) => (
-                <li key={item.id} className="cart-item">
-                  <img src={item.image} alt={item.name} className="cart-item-image" />
-                  <div className="cart-item-details">
-                    <h4>{item.name}</h4>
+                <div key={item.id} className="cart-item-fullscreen">
+                  <img src={item.image} alt={item.name} className="cart-item-image-fullscreen" />
+                  <div className="cart-item-details-fullscreen">
+                    <h3>{item.name}</h3>
                     <p>{item.description}</p>
                     <h4>${item.price.toFixed(2)}</h4>
                     <button onClick={() => removeItem(item.id)}>Remove</button>
                   </div>
-                </li>
+                </div>
               ))}
-            </ul>
-            <div className="cart-total">
-              <h4>Total Amount: ${totalAmount.toFixed(2)}</h4>
+            </div>
+            <div className="cart-total-fullscreen">
+              <h3>Total Amount: ${totalAmount.toFixed(2)}</h3>
             </div>
           </>
         ) : (
