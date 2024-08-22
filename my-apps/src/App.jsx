@@ -30,20 +30,21 @@
 
 
 
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import NavbarRouting from "./Components/Routing/NavbarRouting";
-// import Home from './Components/Routing/Home';
-// import About from './Components/Routing/About';
-// import Contact from './Components/Routing/Contact';
-// import Service from './Components/Routing/Service';
-// import Login from "./Components/Routing/Login";
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Components/Task Commerce Site/Home";
-import Navbar from "./Components/Task Commerce Site/Navbar";
-import Shop from "./Components/Task Commerce Site/Shop";
-import About from "./Components/Task Commerce Site/About";
-import Login from "./Components/Task Commerce Site/Login";
+import NavbarRouting from "./Components/Routing/NavbarRouting";
+import Home from './Components/Routing/Home';
+import About from './Components/Routing/About';
+import Contact from './Components/Routing/Contact';
+import Service from './Components/Routing/Service';
+import Login from "./Components/Routing/Login";
+import Memo from "./Components/Memo";
+
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Home from "./Components/Task Commerce Site/Home";
+// import Navbar from "./Components/Task Commerce Site/Navbar";
+// import Shop from "./Components/Task Commerce Site/Shop";
+// import About from "./Components/Task Commerce Site/About";
+// import Login from "./Components/Task Commerce Site/Login";
 
 
 
@@ -167,7 +168,7 @@ function App() {
 
 
 
-    {/* <BrowserRouter>
+    <BrowserRouter>
     <NavbarRouting/>
     <Routes>
       <Route path="/" element = {<Home/>}></Route>
@@ -176,9 +177,10 @@ function App() {
       <Route path="/contact" element = {<Contact/>}></Route>
       <Route path="/service" element = {<Service/>}></Route>
     </Routes>
-    </BrowserRouter> */}
+    <Memo/>
+    </BrowserRouter>
 
-<BrowserRouter>
+{/* <BrowserRouter>
     <Navbar/>
     <Routes>
     <Route path="/" element = {<Home/>}></Route>
@@ -189,7 +191,7 @@ function App() {
 
 
     </Routes>
-</BrowserRouter>
+</BrowserRouter> */}
 
 
 
