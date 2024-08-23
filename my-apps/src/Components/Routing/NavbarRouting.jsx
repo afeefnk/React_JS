@@ -12,6 +12,8 @@ const NavbarRouting = () => {
         <h1><Link to = '/about'>About</Link></h1>
         <h1><Link to = '/service'>Service</Link></h1>
         <h1><Link to = '/contact'>Contact</Link></h1>
+        <h1><Link to = '/fetchdata'>Fetch</Link></h1>
+        <h1><Link to = '/axiosdata'>Axios</Link></h1>
     </div>
 </nav>
 <Outlet/>
