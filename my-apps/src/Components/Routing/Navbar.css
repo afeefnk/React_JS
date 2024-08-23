@@ -1,38 +1,20 @@
-body {
-    margin: 0;
-}
+/* MyNavbar.css */
 
-.navbar {
-    background-color: #333; /* Dark background */
-    padding: 10px 20px; /* Padding around the navbar */
-    display: flex;
-    justify-content: space-between; /* Space between the logo/title and the menu items */
-    align-items: center; /* Center items vertically */
-}
-
-.navbar .logo {
-    font-size: 24px; /* Adjust font size for the logo/title */
-    color: #fff; /* White color for the logo/title */
-    font-weight: bold; /* Bold font for the logo/title */
-}
-
-.navbar .menu {
-    display: flex; /* Align menu items horizontally */
-}
-
-.navbar .menu h1 {
-    color: #fff; /* White text color */
-    margin: 0 15px; /* Spacing between items */
-    font-size: 20px; /* Font size for the headings */
-    font-weight: normal; /* Normal font weight */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: color 0.3s ease; /* Smooth transition on hover */
-}
-
-.navbar .menu h1:hover {
-    color: #f0a500; /* Change text color on hover */
-}
-.navbar .menu a{
-    color: #fff;
-    text-decoration: none;
-}
+.navbar-custom {
+    background-color: #343a40; /* Dark background */
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #ffffff; /* White text for brand and links */
+    font-weight: bold;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #f8c146; /* Gold color on hover */
+  }
+  
+  .navbar-custom .nav-link.active {
+    color: #f8c146; /* Gold color for the active link */
+  }
+  

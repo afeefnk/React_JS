@@ -40,6 +40,7 @@ import Login from "./Components/Routing/Login";
 import Memo from "./Components/Memo";
 import FetchData from "./Components/Fetch data/FetchData";
 import Axios from "./Components/Axios/Axios";
+import AxiosTask from "./Components/Axios/AxiosTask";
 
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Home from "./Components/Task Commerce Site/Home";
@@ -180,8 +181,9 @@ function App() {
       <Route path="/service" element = {<Service/>}></Route>
       <Route path="/fetchdata" element= {<FetchData/>}></Route>
       <Route path="/axiosdata" element= {<Axios/>}></Route>
+      <Route path="/axiostask" element= {<AxiosTask/>}></Route>
+      <Route path="/memo" element= {<Memo/>}></Route>
     </Routes>
-    <Memo/>
     </BrowserRouter>
 
 {/* <BrowserRouter>
