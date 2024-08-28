@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
+import useReducer  from "../Add User Task/usersSlice";
 
 // import CounterSlice from "../Counter/Counter Slice/CounterSlice";
 
-
 // import ThemeSlice from "../Theme Switcher/Theme Slice/ThemeSlice";
 
-import FormSlice from "../Form/Form Slice/FormSlice";
+// import FormSlice from "../Form/Form Slice/FormSlice";
 
 // import { counter } from "@fortawesome/fontawesome-svg-core";
 
@@ -34,10 +34,17 @@ import FormSlice from "../Form/Form Slice/FormSlice";
 
 // Form--------------------------------------------
 
-const store=configureStore({
-    reducer:{
-        form:FormSlice
-    }
+// const store=configureStore({
+//     reducer:{
+//         form:FormSlice
+//     }
+// })
+
+
+export const store = configureStore({
+    reducer: {
+        users: useReducer,
+      },
 })
 
 export default store
