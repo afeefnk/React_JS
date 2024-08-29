@@ -40,7 +40,7 @@ const Create = () => {
             value={email}
           />
         </div>
-        <button type="submit" className="btn btn-success">
+        <button type="submit" className="btn btn-success d-block mx-auto">
           Submit
         </button>
       </form>
