@@ -1,44 +1,45 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { addUser } from './usersSlice';
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addUser } from "./usersSlice";
 
 const UserForm = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (name && email) {
       dispatch(addUser({ name, email }));
-      setName('');  // Clear the input fields
-      setEmail(''); // Clear the input fields
-    } else {
-      alert('Please fill in both fields');
+      setName("");
+      setEmail("");
     }
   };
-
   return (
     <form onSubmit={handleSubmit}>
-      <div>
+      <div className="form-group mb-3">
         <label>Name:</label>
         <input
           type="text"
+          className="form-control"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Email:</label>
         <input
           type="email"
+          className="form-control"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" className="btn btn-primary mt-3">
+        Register
+      </button>
     </form>
   );
 };

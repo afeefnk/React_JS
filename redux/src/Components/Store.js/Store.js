@@ -1,13 +1,21 @@
-import { configureStore } from "@reduxjs/toolkit";
-import useReducer  from "../Add User Task/usersSlice";
+
 
 // import CounterSlice from "../Counter/Counter Slice/CounterSlice";
+// import { counter } from "@fortawesome/fontawesome-svg-core";
+
+
+// import { configureStore } from "@reduxjs/toolkit";
+// import usersSlice from '../Add User/usersSlice'
+
 
 // import ThemeSlice from "../Theme Switcher/Theme Slice/ThemeSlice";
 
+
 // import FormSlice from "../Form/Form Slice/FormSlice";
 
-// import { counter } from "@fortawesome/fontawesome-svg-core";
+
+import { configureStore } from "@reduxjs/toolkit";
+import UserSlice from "../CRUD/UserSlice";
 
 
 
@@ -41,10 +49,23 @@ import useReducer  from "../Add User Task/usersSlice";
 // })
 
 
-export const store = configureStore({
-    reducer: {
-        users: useReducer,
-      },
-})
 
-export default store
+
+// Add User------------------------------------------
+
+// const store = configureStore({
+//   reducer: {
+//     users: usersSlice,
+//   }
+// })
+// export default store
+
+
+
+// CRUD------------------------------------------
+ const store =  configureStore({
+  reducer: {
+    users: UserSlice,
+  }
+ })
+ export default store 

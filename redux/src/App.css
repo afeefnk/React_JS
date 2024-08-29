@@ -1,5 +1,32 @@
 /* Style of Form */
-p{
+/* p{
     text-align: center;
     margin-bottom: 20px;
-}
+} */
+
+
+/* Add User--------------------------- */
+.App {
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 700px;
+    align-items: center;
+  }
+  
+  nav {
+    text-align: center;
+  }
+  
+  nav .btn {
+    margin: 0 5px;
+  }
+  
+  table {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
