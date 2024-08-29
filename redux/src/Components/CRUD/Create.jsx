@@ -28,6 +28,7 @@ const Create = () => {
             placeholder="Enter Name"
             onChange={(e) => setName(e.target.value)}
             value={name}
+            required
           />
         </div>
         <div className="mb-3">
@@ -38,6 +39,7 @@ const Create = () => {
             placeholder="Enter Email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            required
           />
         </div>
         <button type="submit" className="btn btn-success d-block mx-auto">

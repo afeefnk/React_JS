@@ -74,17 +74,42 @@
 
 // CRUD App-------------------------------------------------------------------
 
+// import React from 'react'
+// import Home from './Components/CRUD/Home'
+// import {BrowserRouter, Route, Routes} from "react-router-dom"
+// import Create from './Components/CRUD/Create'
+// const App = () => {
+//   return (
+//     <div>
+//       <BrowserRouter>
+//       <Routes>
+//       <Route path="/" element={<Home />} />
+//       <Route path='/create' element={<Create/>}/>
+//       </Routes>
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+// CRUD App by own-----------------------------------------------------------
+
 import React from 'react'
-import Home from './Components/CRUD/Home'
-import {BrowserRouter, Route, Routes} from "react-router-dom"
-import Create from './Components/CRUD/Create'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Components/CRUD Task/Home'
+import Create from './Components/CRUD Task/Create'
+
 const App = () => {
   return (
     <div>
       <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path='/create' element={<Create/>}/>
+        <Route path='/' element= {<Home />}/>
+        <Route path='/create' element={<Create/>}/>
       </Routes>
       </BrowserRouter>
     </div>
@@ -92,3 +117,4 @@ const App = () => {
 }
 
 export default App
+

@@ -4,6 +4,7 @@
 // import { counter } from "@fortawesome/fontawesome-svg-core";
 
 
+
 // import { configureStore } from "@reduxjs/toolkit";
 // import usersSlice from '../Add User/usersSlice'
 
@@ -14,8 +15,14 @@
 // import FormSlice from "../Form/Form Slice/FormSlice";
 
 
+// import { configureStore } from "@reduxjs/toolkit";
+// import UserSlice from "../CRUD/UserSlice";
+
+
 import { configureStore } from "@reduxjs/toolkit";
-import UserSlice from "../CRUD/UserSlice";
+import UserSlice from "../CRUD Task/UserSlice";
+
+
 
 
 
@@ -63,9 +70,20 @@ import UserSlice from "../CRUD/UserSlice";
 
 
 // CRUD------------------------------------------
- const store =  configureStore({
+//  const store =  configureStore({
+//   reducer: {
+//     users: UserSlice,
+//   }
+//  })
+//  export default store 
+
+
+
+//  CRUD App by own task----------------------------------
+
+const store = configureStore({
   reducer: {
-    users: UserSlice,
+    users: UserSlice
   }
- })
- export default store 
+})
+export default store
