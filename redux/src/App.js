@@ -74,44 +74,19 @@
 
 // CRUD App-------------------------------------------------------------------
 
-import React from 'react'
-import Home from './Components/CRUD/Home'
-import {BrowserRouter, Route, Routes} from "react-router-dom"
-import Create from './Components/CRUD/Create'
-import Edit from './Components/CRUD/Edit'
-const App = () => {
-  return (
-    <div>
-      <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path='/create' element={<Create/>}/>
-      <Route path= '/edit/:id' element={<Edit/>}/>
-      </Routes>
-      </BrowserRouter>
-    </div>
-  )
-}
-
-export default App
-
-
-
-
-// CRUD App by own-----------------------------------------------------------
-
 // import React from 'react'
-// import { BrowserRouter, Route, Routes } from 'react-router-dom'
-// import Home from './Components/CRUD Task/Home'
-// import Create from './Components/CRUD Task/Create'
-
+// import Home from './Components/CRUD/Home'
+// import {BrowserRouter, Route, Routes} from "react-router-dom"
+// import Create from './Components/CRUD/Create'
+// import Edit from './Components/CRUD/Edit'
 // const App = () => {
 //   return (
 //     <div>
 //       <BrowserRouter>
 //       <Routes>
-//         <Route path='/' element= {<Home />}/>
-//         <Route path='/create' element={<Create/>}/>
+//       <Route path="/" element={<Home />} />
+//       <Route path='/create' element={<Create/>}/>
+//       <Route path= '/edit/:id' element={<Edit/>}/>
 //       </Routes>
 //       </BrowserRouter>
 //     </div>
@@ -119,4 +94,31 @@ export default App
 // }
 
 // export default App
+
+
+
+
+// CRUD App by own-----------------------------------------------------------
+
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Components/CRUD Task/Home'
+import Create from './Components/CRUD Task/Create'
+import Edit from './Components/CRUD Task/Edit'
+
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element= {<Home />}/>
+        <Route path='/create' element={<Create/>}/>
+        <Route path= '/edit/:id' element={<Edit/>}/>
+      </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+
+export default App
 
