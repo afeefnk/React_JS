@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div className="container mt-4">
-      <h2 className="mb-4">CRUD App Task</h2>
+      <h2 className="mb-4 text-center">CRUD App Task</h2>
       <div className="mb-4">
         <Link to="/Create">
           <button className="btn btn-primary">Create</button>
