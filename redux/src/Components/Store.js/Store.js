@@ -5,6 +5,7 @@
 
 
 
+
 // import { configureStore } from "@reduxjs/toolkit";
 // import usersSlice from '../Add User/usersSlice'
 
@@ -19,10 +20,12 @@
 // import UserSlice from "../CRUD/UserSlice";
 
 
+// import { configureStore } from "@reduxjs/toolkit";
+// import UserSlice from "../CRUD Task/UserSlice";
+
+
 import { configureStore } from "@reduxjs/toolkit";
-import UserSlice from "../CRUD Task/UserSlice";
-
-
+import FoodProductSlice from "../Food Product Management System/FoodProductSlice";
 
 
 
@@ -81,9 +84,21 @@ import UserSlice from "../CRUD Task/UserSlice";
 
 //  CRUD App by own task----------------------------------
 
+// const store = configureStore({
+//   reducer: {
+//     users: UserSlice
+//   }
+// })
+// export default store
+
+
+
+// Food Product Management System--------------------------------
+
 const store = configureStore({
   reducer: {
-    users: UserSlice
+    foodProducts: FoodProductSlice
   }
 })
+
 export default store

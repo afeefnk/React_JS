@@ -100,25 +100,56 @@
 
 // CRUD App by own-----------------------------------------------------------
 
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './Components/CRUD Task/Home'
-import Create from './Components/CRUD Task/Create'
-import Edit from './Components/CRUD Task/Edit'
+// import React from 'react'
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import Home from './Components/CRUD Task/Home'
+// import Create from './Components/CRUD Task/Create'
+// import Edit from './Components/CRUD Task/Edit'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <BrowserRouter>
+//       <Routes>
+//         <Route path='/' element= {<Home />}/>
+//         <Route path='/create' element={<Create/>}/>
+//         <Route path= '/edit/:id' element={<Edit/>}/>
+//       </Routes>
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// Food Product Management System-----------------------------------------------------
+
+import React, { useState } from 'react'
+import AddProduct from './Components/Food Product Management System/AddProduct'
+import EditProduct from './Components/Food Product Management System/EditProduct'
+import ProductList from './Components/Food Product Management System/ProductList'
+
+
 
 const App = () => {
+  const [editingProduct, setEditingProduct] = useState(null)
   return (
-    <div>
-      <BrowserRouter>
-      <Routes>
-        <Route path='/' element= {<Home />}/>
-        <Route path='/create' element={<Create/>}/>
-        <Route path= '/edit/:id' element={<Edit/>}/>
-      </Routes>
-      </BrowserRouter>
-    </div>
+    <div className="container mt-5">
+    <h1 className="text-center">Food Product Management System</h1>
+    {editingProduct ? (
+      <EditProduct product={editingProduct} onSave={() => setEditingProduct(null)} />
+    ) : (
+      <>
+        <AddProduct/>
+        <ProductList onEdit={(product) => setEditingProduct(product)} />
+      </>
+    )}
+  </div>
   )
 }
 
 export default App
+
 
