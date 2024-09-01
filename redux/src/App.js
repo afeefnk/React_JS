@@ -128,8 +128,8 @@
 
 import React, { useState } from 'react'
 import AddProduct from './Components/Food Product Management System/AddProduct'
-import EditProduct from './Components/Food Product Management System/EditProduct'
-import ProductList from './Components/Food Product Management System/ProductList'
+import EditProduct from './Components/Food Product Management System/EditPRoduct'
+import ProductList from './Components/Food Product Management System/PRoductList'
 
 
 
@@ -151,5 +151,6 @@ const App = () => {
 }
 
 export default App
+
 
 
